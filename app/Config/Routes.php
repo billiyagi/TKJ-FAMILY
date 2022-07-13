@@ -37,6 +37,9 @@ $routes->set404Override();
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 
+// Authentication System
+$routes->get('auth/create', 'UsersController::create');
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing

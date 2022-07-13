@@ -1,0 +1,84 @@
+*{
+    transition: .3s all;
+}
+.bg-white {
+    background-color: #FFF;
+}
+.montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+.obj-fit {
+    object-fit: cover;
+}
+.tkj-none {
+	display: none;
+}
+/* TKJ BRAND */
+.tkj-jumbotron{
+	display: flex;
+	height: 300px;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+.tkj-brand span{
+    display: block;
+	font-family: arial;
+	font-weight: 600;
+	font-style: oblique;
+	font-size: 1.5em;
+	line-height: .8;
+	margin: 0;
+	transform: skewY(-3deg);
+}
+.tkj-brand a{
+	text-decoration: none;
+	color: #fff;
+	position: relative;
+	display: block;
+}
+.tkj-brand a span:hover{
+	text-shadow: 0px 0px 0px rgba(225, 62, 0, 1.0);
+	transition: .3s;
+}
+.text-shadow-orange{
+	text-shadow: 2px 2px 0px rgba(225, 62, 0, 1.0);
+}
+.tkj-brand p{
+	position: absolute;
+	bottom: -24px;
+	right: 0;
+	padding: 0px 10px;
+	font-weight: 600;
+	font-size: 1.5em !important;
+	word-wrap: nowrap;
+	background: rgba(225, 62, 0, 1.0);
+	box-shadow: 4px 4px 0px rgba(225, 255, 255, 1.0);
+}
+.tkj-brand span{
+	position: relative;
+}
+
+.tkj-menu-trigger span{
+    height: 2px;
+    padding: 2px;
+    height: 4px;
+}
+
+.btn-orange-tkj{
+	background: #E13E00;
+    color: #FFF;
+    border: none;
+}
+.btn-orange-tkj:hover{
+    color: #FFF;
+    border: none;
+	background: #C63500;
+}
+.btn-orange-tkj:focus{
+    color: #FFF;
+    border: none;
+	background: #C63500;
+	box-shadow: 0 0 0 0.25rem #ec430077 !important;
+}

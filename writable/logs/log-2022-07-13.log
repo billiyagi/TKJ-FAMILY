@@ -1,0 +1,16 @@
+ERROR - 2022-07-13 09:29:41 --> Error connecting to the database: Unknown database 'tkj_family'
+ERROR - 2022-07-13 09:30:11 --> Incorrect table definition; there can be only one auto column and it must be defined as a key
+ERROR - 2022-07-13 09:30:56 --> Incorrect table definition; there can be only one auto column and it must be defined as a key
+ERROR - 2022-07-13 09:32:02 --> Incorrect table definition; there can be only one auto column and it must be defined as a key
+ERROR - 2022-07-13 09:33:06 --> Incorrect table definition; there can be only one auto column and it must be defined as a key
+ERROR - 2022-07-13 09:34:35 --> Can't create table `tkj_family`.`users` (errno: 150 "Foreign key constraint is incorrectly formed")
+ERROR - 2022-07-13 09:35:14 --> Can't create table `tkj_family`.`users` (errno: 150 "Foreign key constraint is incorrectly formed")
+ERROR - 2022-07-13 09:35:35 --> Can't create table `tkj_family`.`users` (errno: 150 "Foreign key constraint is incorrectly formed")
+ERROR - 2022-07-13 09:35:54 --> Can't create table `tkj_family`.`users` (errno: 150 "Foreign key constraint is incorrectly formed")
+ERROR - 2022-07-13 09:37:03 --> Can't create table `tkj_family`.`users` (errno: 150 "Foreign key constraint is incorrectly formed")
+ERROR - 2022-07-13 09:37:36 --> Can't create table `tkj_family`.`users` (errno: 150 "Foreign key constraint is incorrectly formed")
+ERROR - 2022-07-13 09:39:11 --> Can't create table `tkj_family`.`users` (errno: 150 "Foreign key constraint is incorrectly formed")
+ERROR - 2022-07-13 09:40:43 --> Can't create table `tkj_family`.`users` (errno: 150 "Foreign key constraint is incorrectly formed")
+ERROR - 2022-07-13 09:53:39 --> Can't create table `tkj_family`.`users` (errno: 150 "Foreign key constraint is incorrectly formed")
+ERROR - 2022-07-13 09:54:42 --> Can't create table `tkj_family`.`users` (errno: 150 "Foreign key constraint is incorrectly formed")
+ERROR - 2022-07-13 09:56:45 --> Can't create table `tkj_family`.`users` (errno: 150 "Foreign key constraint is incorrectly formed")
