@@ -14,3 +14,10 @@ ERROR - 2022-07-13 09:40:43 --> Can't create table `tkj_family`.`users` (errno: 
 ERROR - 2022-07-13 09:53:39 --> Can't create table `tkj_family`.`users` (errno: 150 "Foreign key constraint is incorrectly formed")
 ERROR - 2022-07-13 09:54:42 --> Can't create table `tkj_family`.`users` (errno: 150 "Foreign key constraint is incorrectly formed")
 ERROR - 2022-07-13 09:56:45 --> Can't create table `tkj_family`.`users` (errno: 150 "Foreign key constraint is incorrectly formed")
+CRITICAL - 2022-07-13 21:25:02 --> Class "Voku\helper\AntiXSS" not found
+in APPPATH\Controllers\BaseController.php on line 52.
+ 1 SYSTEMPATH\CodeIgniter.php(859): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

@@ -59,6 +59,21 @@ class UsersMigration extends Migration
                 'constraint'        =>  0,
                 'null'              =>  FALSE
             ],
+            'last_login' => [
+                'type'              =>  'TIMESTAMP',
+                'null'              =>  TRUE,
+                'default'           =>  NULL
+            ],
+            'created_at' => [
+                'type'              =>  'TIMESTAMP',
+                'null'              =>  TRUE,
+                'default'           =>  NULL
+            ],
+            'updated_at' => [
+                'type'              =>  'TIMESTAMP',
+                'null'              =>  TRUE,
+                'default'           =>  NULL
+            ]
         ]);
 
         $this->forge->addPrimaryKey('user_id');

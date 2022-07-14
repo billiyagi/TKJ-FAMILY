@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?= csrf_meta(); ?>
 
     <!-- CSS Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
@@ -19,7 +20,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,600;0,700;1,200;1,400;1,600;1,700&display=swap" rel="stylesheet">
 
-    <title>Document</title>
+    <title><?= $title_page; ?></title>
 </head>
 <body>
 
@@ -41,5 +42,10 @@
 
 <!-- JS Primary -->
 <script src="<?= base_url('assets/js/script.js'); ?>"></script>
+
+<!-- JS Sweet Alert -->
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<?= $this->renderSection('script'); ?>
 </body>
 </html>

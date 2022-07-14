@@ -8,6 +8,7 @@ use CodeIgniter\HTTP\IncomingRequest;
 use CodeIgniter\HTTP\RequestInterface;
 use CodeIgniter\HTTP\ResponseInterface;
 use Psr\Log\LoggerInterface;
+use voku\helper\AntiXSS;
 
 /**
  * Class BaseController
@@ -35,7 +36,7 @@ abstract class BaseController extends Controller
      *
      * @var array
      */
-    protected $helpers = [];
+    protected $helpers = ['text', 'security', 'number', 'inflector', 'date', 'cookie'];
 
     /**
      * Constructor.
@@ -47,6 +48,15 @@ abstract class BaseController extends Controller
 
         // Preload any models, libraries, etc, here.
         
+        // Library
+        session();
+        $this->xss = new AntiXSS();
+        $this->validator = \Config\Services::validation();
+
+        
+        // Models
+        $this->user_model = new \App\Models\UserModel();
+
         // E.g.: $this->session = \Config\Services::session();
     }
 }

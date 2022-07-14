@@ -46,3 +46,19 @@
 </div>
 
 <?php $this->endSection(); ?>
+
+
+<?php $this->section('script'); ?>
+<script>
+    
+    $(document).ready(function() {
+        // Form Pendaftaran
+        formAJAX('#formSignUp', 'POST', '/auth/create', ['Pendaftaran berhasil dilakukan', 'silahkan login untuk masuk ke akun', 'success'], '#authModal');
+
+        // Form Login
+        formAJAX('#formSignIn', 'POST', '/auth', ['Akun valid', '', 'success'], '#authModal', function() {
+            window.location.href = 'auth/login';
+        });
+    })
+</script>
+<?php $this->endSection(); ?>
