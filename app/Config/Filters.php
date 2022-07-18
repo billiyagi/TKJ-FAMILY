@@ -3,7 +3,7 @@
 namespace Config;
 
 use App\Filters\AdminRoleFilter;
-use App\Filters\AuthorRoleFilter;
+use App\Filters\AuthFilter;
 use CodeIgniter\Config\BaseConfig;
 use CodeIgniter\Filters\CSRF;
 use CodeIgniter\Filters\DebugToolbar;
@@ -26,7 +26,7 @@ class Filters extends BaseConfig
         'invalidchars'  => InvalidChars::class,
         'secureheaders' => SecureHeaders::class,
         'admin'         => AdminRoleFilter::class,
-        'author'        => AuthorRoleFilter::class
+        'auth'          => AuthFilter::class
     ];
 
     /**

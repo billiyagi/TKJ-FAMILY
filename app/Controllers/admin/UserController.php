@@ -29,13 +29,13 @@ class UserController extends BaseController
                 ]
             ],
             'email'    =>  [
-                'rules'         =>  'required|valid_email',
+                'rules'         =>  'required|valid_email|is_unique[users.email,user_id,{id}]',
                 'errors'        =>  [
                     'required'      =>  'alamat email diperlukan'
                 ]
             ],
             'username'    =>  [
-                'rules'         =>  'required|string'
+                'rules'         =>  'required|string|is_unique[users.username,user_id,{id}]'
             ],
             'password'    =>  [
                 'rules'         =>  'required|string'
@@ -72,5 +72,10 @@ class UserController extends BaseController
         */
         $status = ($this->user_model->save($data)) ? TRUE : FALSE;
         return $this->response->setJSON(['validation' => $status]);
+    }
+
+    public function show_ajax($id)
+    {
+        return $this->response->setJSON($this->user_model->find($id));
     }
 }

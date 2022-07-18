@@ -1,4 +1,47 @@
 $(document).ready(function() {
+    // Confirm
+    $('.btn-confirm').click(function() {
+        let message = $(this).attr('data-confirm');
+        let btnConfirm = $(this);
+        Swal.fire({
+        title: message,
+        icon: 'question',
+        showCancelButton: true,
+        cancelButtonText: 'Tidak',
+        confirmButtonText: 'Ya',
+        }).then((result) => {
+            /* Redirect Keluar Aplikasi */
+            if (result.isConfirmed) {
+                btnConfirm.parents('form').submit();
+            }
+        })
+    })
+
+    // Logout Akun
+    $('#btnSignOut').click(function() {
+        Swal.fire({
+        title: 'Keluar dari sesi saat ini?',
+        icon: 'question',
+        showCancelButton: true,
+        confirmButtonText: 'Keluar',
+        }).then((result) => {
+            /* Redirect Keluar Aplikasi */
+            if (result.isConfirmed) {
+                window.location.href = '/auth/logout';
+            }
+        })
+    });
+
+    // Form Pendaftaran
+    formAJAX('#formSignUp', 'POST', '/auth/create', ['Pendaftaran berhasil dilakukan', 'silahkan login untuk masuk ke akun', 'success'], '#authModal');
+
+    // Form Login
+    formAJAX('#formSignIn', 'POST', '/auth', ['Login berhasil', 'Sedang mengalihkan ke dashboard', 'success'], '#authModal', function() {
+        setTimeout(function() {
+            window.location.href = 'member/dashboard';
+        }, 2500);
+    });
+
     // Merubah Form Login
     $('#formMode').click(function() {
         if ( $(this).attr('data-form') == 'up' ) {
@@ -20,7 +63,7 @@ $(document).ready(function() {
 
 });
 
-function formAJAX(form, method, uri, successMessage, modalId, fnHandler)
+function formAJAX(form, method, uri, successMessage, modalId, fnHandler = ()=>'')
 {
 
     $(form).submit(function(e){
@@ -47,11 +90,13 @@ function formAJAX(form, method, uri, successMessage, modalId, fnHandler)
             url: uri,
 
             // Format data input
-            data: form.serialize(),
-
+            data: new FormData(this),
+            contentType: false,
+            cache: false,
+            processData: false,
             // Fungsi success untuk mengatasi data ketika permintaan AJAX berhasil
             success: function(success) {
-                
+
                 // Kosongkan Semua input di dalam form
                 $.each($(`.form-control`), function() {
                     let input = $(`.form-control`);
@@ -60,7 +105,7 @@ function formAJAX(form, method, uri, successMessage, modalId, fnHandler)
                     input.siblings('.invalid-feedback').empty();
                 })
 
-
+                console.log(success);
                 /** 
                  * Memeriksa validasi form
                  */ 
@@ -86,30 +131,48 @@ function formAJAX(form, method, uri, successMessage, modalId, fnHandler)
                     if ( modalId != '' ) {
                         $(modalId).modal('hide');
                     }
+                    
+                    // Sembunyikan tombol loading
+                    hideLoader();
 
-                    // Munculkan pesan keberhasilan
-                    Swal.fire({
-                        title: successMessage[0],
-                        text: successMessage[1],
-                        icon: successMessage[2],
-                        timer: 3500,
-                        timerProgressBar: true,
-                        showConfirmButton: false
-                    });
+                    // Periksa apakah ada pesan error
+                    if ( success.error ) {
+                        // Munculkan pesan Error
+                        return Swal.fire({
+                            title: success.error[0],
+                            text: success.error[1],
+                            icon: success.error[2],
+                            timer: 3500,
+                            timerProgressBar: true,
+                            showConfirmButton: false
+                        });
+
+                    } else {
+
+                        // Munculkan pesan keberhasilan
+                        Swal.fire({
+                            title: successMessage[0],
+                            text: successMessage[1],
+                            icon: successMessage[2],
+                            timer: 3500,
+                            timerProgressBar: true,
+                            showConfirmButton: false
+                        });
+
+                    }
 
                     // Kosongkan input di dalam form
                     $.each($(`.form-control`), function() {
                         let input = $(`.form-control`);
                         input.removeClass('is-invalid');
-                        input.val('');
+                        if ( form == '#formSignUp' || form == '#formSignIn' ) {
+                            input.val('');
+                        }
                         input.siblings('.invalid-feedback').empty();
                     })
 
-                    // Sembunyikan tombol loading
-                    hideLoader()
-
-                    // Melakukan suatu fungsi ketika kondisi berhasil dilakukan
-                    return fnHandler;
+                    // Melakukan suatu fungsi ketika kondisi berhasil dilakuka
+                    return fnHandler();
                 }
             } ,
 
@@ -147,4 +210,8 @@ function showLoader()
 {
     $('#formSubmit').addClass('disabled')
     $('#formSubmit').children('.spinner-border').removeClass('d-none');
+}
+
+function simpan(data) {
+    return data;
 }

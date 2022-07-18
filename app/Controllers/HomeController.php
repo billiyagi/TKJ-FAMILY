@@ -10,6 +10,6 @@ class HomeController extends BaseController
             'title_page'    =>  'TKJ FAMILY - Angkatan 11'
         ];
 
-        return view('home/beranda', $data);
+        return view('home/index', $data);
     }
 }

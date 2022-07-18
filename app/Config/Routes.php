@@ -25,7 +25,7 @@ $routes->set404Override();
 // where controller filters or CSRF protection are bypassed.
 // If you don't want to define all routes, please use the Auto Routing (Improved).
 // Set `$autoRoutesImproved` to true in `app/Config/Feature.php` and set the following to true.
-//$routes->setAutoRoute(false);
+$routes->setAutoRoute(false);
 
 /*
  * --------------------------------------------------------------------
@@ -40,21 +40,27 @@ $routes->get('/', 'HomeController::index');
 // Authentication System
 $routes->post('auth', 'AuthController::index');
 $routes->post('auth/create', 'Admin\UserController::store');
-
-
-/** 
- * Admin Environment
-*/
-$routes->group('admin', ['filter' => 'admin'], function($routes) {
-    $routes->get('dashboard', 'DashboardController::index');
-});
-
+$routes->get('auth/logout', 'AuthController::logout');
 
 /** 
- * Member Author Environtment
+ * Member Login
 */
-$routes->group('member', ['filter' => 'author'], function($routes) {
+$routes->group('member', ['filter' => 'auth'], function($routes) {
     $routes->get('dashboard', 'DashboardController::index');
+
+    // Profile Controller
+    $routes->get('profile', 'ProfileController::index');
+    $routes->post('profile/update', 'ProfileController::update');
+
+
+    // Post Controller
+    $routes->get('posts', 'PostsController::index');
+    /** 
+     * Admin Environtment
+    */
+    $routes->group('admin', ['filter' => 'admin'], function ($routes) {
+        // $this->
+    });
 });
 
 /*

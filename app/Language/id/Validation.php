@@ -37,7 +37,7 @@ return [
     'is_natural'            => '{field} hanya boleh berisi angka.',
     'is_natural_no_zero'    => '{field} hanya boleh berisi angka dan harus lebih besar dari nol.',
     'is_not_unique'         => '{field} harus berisi nilai yang sudah ada sebelumnya dalam database.',
-    'is_unique'             => '{field} harus mengandung sebuah nilai unik.',
+    'is_unique'             => '{field} {value} telah digunakan.',
     'less_than'             => '{field} harus berisi sebuah angka yang kurang dari {param}.',
     'less_than_equal_to'    => '{field} harus berisi sebuah angka yang kurang dari atau sama dengan {param}.',
     'matches'               => '{field} tidak cocok dengan {param}.',
