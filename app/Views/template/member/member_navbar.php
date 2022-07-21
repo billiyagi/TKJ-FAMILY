@@ -35,7 +35,7 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="<?= base_url('member/posts'); ?>" class="nav-link">
+                            <a href="<?= base_url('member/post'); ?>" class="nav-link">
                                 <p>All Posts</p>
                             </a>
                             <a href="./index.html" class="nav-link">

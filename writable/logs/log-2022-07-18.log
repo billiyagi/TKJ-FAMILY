@@ -110,3 +110,192 @@ in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 137.
  5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
  7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-07-18 14:41:33 --> Operand should contain 1 column(s)
+ERROR - 2022-07-18 14:42:46 --> Operand should contain 1 column(s)
+CRITICAL - 2022-07-18 21:13:26 --> Undefined property: CodeIgniter\View\View::$time
+in APPPATH\Views\member\posts\index.php on line 39.
+ 1 APPPATH\Views\member\posts\index.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$time', 'APPPATH\\Views\\member\\posts\\index.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\member\\posts\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('member/posts/index', [], true)
+ 5 APPPATH\Controllers\PostController.php(16): view('member/posts/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PostController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-18 21:14:29 --> Undefined property: CodeIgniter\View\View::$time
+in APPPATH\Views\member\posts\index.php on line 39.
+ 1 APPPATH\Views\member\posts\index.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$time', 'APPPATH\\Views\\member\\posts\\index.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\member\\posts\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('member/posts/index', [], true)
+ 5 APPPATH\Controllers\PostController.php(17): view('member/posts/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PostController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-18 21:14:43 --> Non-static method CodeIgniter\I18n\Time::toLocalizedString() cannot be called statically
+in APPPATH\Views\member\posts\index.php on line 39.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('member/posts/index', [], true)
+ 4 APPPATH\Controllers\PostController.php(17): view('member/posts/index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PostController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-18 21:15:26 --> Undefined property: CodeIgniter\View\View::$time
+in APPPATH\Views\member\posts\index.php on line 39.
+ 1 APPPATH\Views\member\posts\index.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$time', 'APPPATH\\Views\\member\\posts\\index.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\member\\posts\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('member/posts/index', [], true)
+ 5 APPPATH\Controllers\PostController.php(17): view('member/posts/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PostController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-18 21:58:37 --> Undefined property: stdClass::$id
+in APPPATH\Views\member\posts\index.php on line 45.
+ 1 APPPATH\Views\member\posts\index.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id', 'APPPATH\\Views\\member\\posts\\index.php', 45)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\member\\posts\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('member/posts/index', [], true)
+ 5 APPPATH\Controllers\PostController.php(17): view('member/posts/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PostController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-18 22:07:45 --> Object of class CodeIgniter\Pager\Pager could not be converted to string
+in APPPATH\Views\member\posts\index.php on line 79.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('member/posts/index', [], true)
+ 4 APPPATH\Controllers\PostController.php(18): view('member/posts/index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PostController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-18 22:41:59 --> Call to undefined method CodeIgniter\Pager\Pager::fullLinks()
+in APPPATH\Views\member\posts\index.php on line 79.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('member/posts/index', [], true)
+ 4 APPPATH\Controllers\PostController.php(19): view('member/posts/index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PostController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-18 22:44:12 --> Call to undefined method CodeIgniter\Pager\Pager::fullLinks()
+in APPPATH\Views\member\posts\index.php on line 79.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('member/posts/index', [], true)
+ 4 APPPATH\Controllers\PostController.php(19): view('member/posts/index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PostController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-07-18 23:17:08 --> Table 'tkj_family.category' doesn't exist
+CRITICAL - 2022-07-18 23:17:08 --> Table 'tkj_family.category' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `posts`
+JOIN `category` ON `category`.`category_id` = `posts`.`category_id`
+JOIN `users` ON `users`.`user_id` = `posts`.`user_id`
+WHERE `posts`.`post_deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `posts`
+JOIN `category` ON `category`.`category_id` = `posts`.`category_id`
+JOIN `users` ON `users`.`user_id` = `posts`.`user_id`
+WHERE `posts`.`post_deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `posts`
+JOIN `category` ON `category`.`category_id` = `posts`.`category_id`
+JOIN `users` ON `users`.`user_id` = `posts`.`user_id`
+WHERE `posts`.`post_deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `posts`
+JOIN `category` ON `category`.`category_id` = `posts`.`category_id`
+JOIN `users` ON `users`.`user_id` = `posts`.`user_id`
+WHERE `posts`.`post_deleted_at` IS NULL', [], false)
+ 5 SYSTEMPATH\Model.php(550): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1084): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\PostController.php(12): CodeIgniter\BaseModel->paginate(5)
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PostController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-07-18 23:21:45 --> Table 'tkj_family.category' doesn't exist
+CRITICAL - 2022-07-18 23:21:45 --> Table 'tkj_family.category' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `posts`
+JOIN `category` ON `category`.`category_id` = `posts`.`category_id`
+JOIN `users` ON `users`.`user_id` = `posts`.`user_id`
+WHERE `posts`.`post_deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `posts`
+JOIN `category` ON `category`.`category_id` = `posts`.`category_id`
+JOIN `users` ON `users`.`user_id` = `posts`.`user_id`
+WHERE `posts`.`post_deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `posts`
+JOIN `category` ON `category`.`category_id` = `posts`.`category_id`
+JOIN `users` ON `users`.`user_id` = `posts`.`user_id`
+WHERE `posts`.`post_deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `posts`
+JOIN `category` ON `category`.`category_id` = `posts`.`category_id`
+JOIN `users` ON `users`.`user_id` = `posts`.`user_id`
+WHERE `posts`.`post_deleted_at` IS NULL', [], false)
+ 5 SYSTEMPATH\Model.php(550): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1084): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\PostController.php(12): CodeIgniter\BaseModel->paginate(5)
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PostController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-07-18 23:22:20 --> Unknown column 'id' in 'order clause'
+CRITICAL - 2022-07-18 23:22:20 --> Unknown column 'id' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `categories`
+ORDER BY `id` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `categories`
+ORDER BY `id` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `categories`
+ORDER BY `id` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `categories`
+ORDER BY `id` DESC', [], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\PostController.php(32): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PostController->create()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-18 23:22:44 --> Invalid file: member/post/create.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('member/post/create.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('member/post/create', [], true)
+ 3 APPPATH\Controllers\PostController.php(35): view('member/post/create', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PostController->create()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

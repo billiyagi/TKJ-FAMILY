@@ -22,3 +22,11 @@ function user_avatar($avatar)
         return base_url('uploads/' . $avatar);
     }
 }
+function post_thumbnail($thumbnail)
+{
+    if ( $thumbnail == 'default-thumbnail.png' ) {
+        return base_url('assets/img/default-thumbnail.png');
+    } else {
+        return base_url('uploads/' . $thumbnail);
+    }
+}

@@ -54,7 +54,8 @@ $routes->group('member', ['filter' => 'auth'], function($routes) {
 
 
     // Post Controller
-    $routes->get('posts', 'PostsController::index');
+    $routes->get('post', 'PostController::index');
+    $routes->get('post/create', 'PostController::create');
     /** 
      * Admin Environtment
     */

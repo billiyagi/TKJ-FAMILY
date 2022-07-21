@@ -9,6 +9,7 @@ use CodeIgniter\HTTP\RequestInterface;
 use CodeIgniter\HTTP\ResponseInterface;
 use Psr\Log\LoggerInterface;
 use voku\helper\AntiXSS;
+use CodeIgniter\I18n\Time;
 
 /**
  * Class BaseController
@@ -52,10 +53,12 @@ abstract class BaseController extends Controller
         session();
         $this->xss = new AntiXSS();
         $this->validator = \Config\Services::validation();
-
+        $this->time = new Time();
         
         // Models
         $this->user_model = new \App\Models\UserModel();
+        $this->post_model = new \App\Models\PostModel();
+        $this->category_model = new \App\Models\CategoryModel();
 
         // E.g.: $this->session = \Config\Services::session();
     }
